@@ -12,7 +12,6 @@ def home(request):
 
 
 def about(request):
-    
     return render(request,"about.html")
 
 def shoppinglist(request):
@@ -28,5 +27,4 @@ def dashboard(request):
         "user_name":"Jane",
         "is_admin":False
     }
-    
     return render(request,"dashboard.html", context)
