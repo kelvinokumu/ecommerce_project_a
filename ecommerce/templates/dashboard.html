@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title> {{page_title}} </title>
+    </head>
+    <body>
+        <h1>Welcome {{user_name}} </h1>
+
+        {% if is_admin %}
+            <p>Your are the Admin</p>
+        {% else %}
+            <p>Your are Guest</p>
+        {% endif %}
+    </body>
+</html>
